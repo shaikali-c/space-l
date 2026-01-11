@@ -1,15 +1,34 @@
-import Image from "next/image";
+import { CircleUserRound, Heart, Send } from "lucide-react";
+import SpcImage from "./image";
+import PInteraction from "./post/p_interaction";
 
 export default function Post({ id }) {
   return (
-    <div className="h-120 min-w-80 md:h-150 md:min-w-100 bg-neutral-800 rounded-2xl relative overflow-hidden border border-neutral-900 hover:border-neutral-800">
-      <Image
-        src={`/assets/images/${id}.jpg`}
-        fill
-        alt="a"
-        className="object-cover"
-        key={id}
-      />
+    <div className="max-w-110 pb-0 border-b md:border-b md:border-r md:border-neutral-900 md:border-x-0 border-neutral-800">
+      <header className="flex items-center py-5 pb-3 px-6 justify-between">
+        <div className="flex items-center gap-2">
+          <CircleUserRound />
+          <h2 className="font-semibold">Shaik Ali </h2>
+        </div>
+        <p className="text-neutral-400 text-sm">Matrices</p>
+      </header>
+      <div className="px-5 py-2">
+        <SpcImage src={"/assets/images/1.jpg"} alt={"Image"} />
+        <section className="py-3 px-1">
+          <div className="flex gap-2 py-1.5 font-bold text-neutral-200">
+            <PInteraction>
+              <Heart />
+            </PInteraction>
+            <PInteraction>
+              <Send />
+            </PInteraction>
+          </div>
+          <p className="text-neutral-400">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. {id}
+          </p>
+        </section>
+      </div>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Favourite() {
   return (
-    <div className="w-full h-fit border border-neutral-800 bg-neutral-900 rounded-2xl">
+    <div className="w-full border border-neutral-800 bg-neutral-900 rounded-2xl">
       <header className="flex items-center justify-between px-5 py-4 border-b border-neutral-800">
         <div className="flex items-center gap-2">
           <CircleUser size={20} />
@@ -28,17 +28,15 @@ export default function Favourite() {
                 src={"/assets/images/1.jpg"}
                 alt="Im"
                 className="object-cover"
-                width={800}
-                height={600}
+                fill
               />
             </div>
-            <div className="rounded-xl overflow-hidden relative border border-neutral-800">
+            <div className="rounded-xl overflow-hidden relative border border-neutral-800 h-60">
               <Image
                 src={"/assets/images/3.jpg"}
                 alt="Im"
                 className="object-cover"
-                width={800}
-                height={600}
+                fill
               />
             </div>
           </div>

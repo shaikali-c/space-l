@@ -1,7 +1,10 @@
-export default function Heading({ children }) {
+import { Lora } from "next/font/google";
+
+const lora = Lora({ subsets: ["latin"] });
+export default function Heading({ children, className }) {
   return (
-    <section className="p-7 md:p-15 text-3xl pb-10">
-      <h2 className="max-w-120">{children}</h2>
-    </section>
+    <header className={`${lora.className} ${className}`}>
+      <h2>{children}</h2>
+    </header>
   );
 }
