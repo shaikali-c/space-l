@@ -4,7 +4,7 @@ import PInteraction from "./post/p_interaction";
 
 export default function Post({ id }) {
   return (
-    <div className="max-w-110 pb-0 border-b md:border-b md:border-r md:border-neutral-900 md:border-x-0 border-neutral-800">
+    <div className="max-w-110 pb-0 border-b md:border-b md:border-neutral-900 border-neutral-800 md:not-nth-[3n]:border-r">
       <header className="flex items-center py-5 pb-3 px-6 justify-between">
         <div className="flex items-center gap-2">
           <CircleUserRound />

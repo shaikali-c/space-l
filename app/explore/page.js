@@ -24,19 +24,14 @@ export default function Explore() {
               The space is so peak, it's just needs an oscar, but for space.
             </Heading>
           </section>
-          <section className="border-b border-neutral-900 flex text-neutral-300">
-            <button className="md:px-15  md:py-5 md:text-lg p-5 px-8  cursor-pointer border-r border-neutral-900 flex items-center gap-2 transition-colors hover:text-neutral-100 hover:bg-neutral-900">
+          <section className="border-b border-neutral-900 grid grid-cols-2 text-neutral-300">
+            <button className="md:px-15  md:py-5 md:text-lg p-5 px-8 justify-center cursor-pointer border-r border-neutral-900 flex items-center gap-2 transition-colors hover:text-neutral-100 hover:bg-neutral-900">
               <ListFilter size={20} />
               Filter
             </button>
-            <button className="md:px-15  md:py-5 md:text-lg p-5 cursor-pointer px-5 border-r border-neutral-900  transition-colors hover:bg-neutral-900 hover:text-neutral-100">
-              <Bookmark color="#d4d4d4" />
+            <button className="md:px-15 flex items-center gap-2 justify-center md:py-5 md:text-lg p-5 cursor-pointer px-5 border-0 border-neutral-900  transition-colors hover:bg-neutral-900 hover:text-neutral-100">
+              <Bookmark color="#d4d4d4" /> Saved
             </button>
-            <input
-              placeholder="Keywords..."
-              type="text"
-              className="w-full pl-5.5 outline-0"
-            />
           </section>
           <section className="grid grid-cols-1 md:grid-cols-3">
             <Post />
